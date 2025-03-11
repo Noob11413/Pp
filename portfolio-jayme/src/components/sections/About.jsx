@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "../RevealOnScroll";
+
 export const About =  () => {
 
     const FrontendSkills = [
@@ -38,7 +40,7 @@ export const About =  () => {
                 {" "}
                 About Me
                 </h2>
-        
+            <RevealOnScroll>
             <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 trainsition-all"> 
                 <p className="text-gray-300 mb-6">
                     Im a passionate developer, and I really love to work with new technologies and explore more of what these tools are
@@ -120,6 +122,19 @@ export const About =  () => {
                 </ul>
                 </div>
             </div>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8 ">
+                <div className="p-6 rouded-xl border-white/10 border hover:-translate-y-1 transtition-all">
+                <h3 className="text-xl font-bold mb-4"> 🎉Extra curricular </h3>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                    <li>
+                        I've been an amatuer photographer for 9 years, I do T-shirt designs, and dabble on magazine designing, studying raspberry pi
+                        I did some robotics when I was in Senior High.
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+            </RevealOnScroll>
         </div>
     </sectionn>
 };
